@@ -1,5 +1,7 @@
 body {
     background-image: url("https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com/c39de0b7-ddd6-416d-b8b9-c9cb1f7d9618/orig.jpg&quality=90&w=1500&h=900&mode=crop&format=jpg&v=4");
+    background-size: cover;
+    background-position: fixed;
     text-align: center;
     margin: 0 auto;
     font-family: 'Modak', cursive;
@@ -58,6 +60,8 @@ button {
     box-sizing: unset;
     color: royalblue;
     font-family: 'Sigmar One', cursive;
+    font-size: 1.5vw;
+
 
 
 }
