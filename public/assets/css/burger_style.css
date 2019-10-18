@@ -3,19 +3,44 @@ body {
     text-align: center;
     margin: 0 auto;
     font-family: 'Modak', cursive;
-
 }
 
 #container {
-    background-color: rgba(30,30,30,.8);
+    background-color: rgba(30, 30, 30, .8);
     margin: 0 auto;
     width: 60%;
     padding: 5%;
     padding-top: 0;
 }
 
+h1 {
+    font-size: 10vw;
+    color: yellow;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2vw;
+    color: lightgreen;
+    font-family: 'Sigmar One', cursive;
+}
+
+li {
+    margin-bottom: 1%;
+    color: royalblue;
+    font-family: 'Sigmar One', cursive;
+    font-size: 1.5vw;
+
+
+}
+
+
+button {
+    font-family: 'Anton', sans-serif;
+}
+
 .btn:hover {
-    cursor:wait
+    cursor: wait
 }
 
 #ca {
@@ -24,15 +49,17 @@ body {
 
 .input-group-text {
     box-sizing: border-box;
-    height:auto;
+    height: auto;
     text-align: center;
 }
-
-input {}
 
 .form-group {
     text-align: center;
     box-sizing: unset;
+    color: royalblue;
+    font-family: 'Sigmar One', cursive;
+
+
 }
 
 .form-control {
@@ -44,4 +71,4 @@ input {}
     margin-right: auto;
     margin-left: auto;
     width: 100%
-  }
+}
