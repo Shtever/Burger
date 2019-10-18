@@ -1,38 +1,48 @@
-<h1>Burgers!</h1>
+<div id="container">
 
-<h2>Burgers are ready to eat</h2>
+  <h1>Burgers!</h1>
 
-<ul>
-  {{#each burgers}}
+  <h2>Burgers are ready to eat</h2>
+
+  <p>
+    {{#each burgers}}
     {{#unless devoured}}
-      {{> burger-block devoured=true}}
+    {{> burger-block devoured=true}}
     {{/unless}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </p>
 
-<h2>Burgers you have are devoured:</h2>
+  <h2>Burgers you have are devoured:</h2>
 
-<ul>
-  {{#each burgers}}
+  <p>
+    {{#each burgers}}
     {{#if devoured}}
-      {{> burger-block devoured=false}}
+    {{> burger-block devoured=false}}
     {{/if}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </p>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+  <h2>Add a Burger</h2>
+  <form class="create-form">
+    <div class="form-group input-group mb-3 center-block">
+      <div class="input-group-prepend center-block">
+        <span class="center-block" id="basic-addon1"><label for="ca">Burger Name:</label></span>
+        <input type="text" class="form-control center-block" id="ca" placeholder="" aria-label="Burger Name"
+          aria-describedby="basic-addon1">
+      </div>
+    </div>
 
-  <div class="form-group">
+    {{!-- <div class="form-group input-group mb-3">
     <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
+    <input type="text" class="form-control" id="ca" name="name">
+  </div> --}}
 
-  <div class="form-group">
-    <label for="devoured">devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Uneaten!
-  </div>
+    <div class="form-group">
+      <label for="devoured">State of the burger:</label><br>
+      <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+      <input type="radio" name="devoured" value="0"> Uneaten!
+    </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+    <button type="submit">Add Burger</button>
+  </form>
+</div>

@@ -1,7 +1,47 @@
-html {
-    background-color: aqua;
+body {
+    background-image: url("https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com/c39de0b7-ddd6-416d-b8b9-c9cb1f7d9618/orig.jpg&quality=90&w=1500&h=900&mode=crop&format=jpg&v=4");
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Modak', cursive;
+
+}
+
+#container {
+    background-color: rgba(30,30,30,.8);
+    margin: 0 auto;
+    width: 60%;
+    padding: 5%;
+    padding-top: 0;
 }
 
 .btn:hover {
     cursor:wait
 }
+
+#ca {
+    width: 50%;
+}
+
+.input-group-text {
+    box-sizing: border-box;
+    height:auto;
+    text-align: center;
+}
+
+input {}
+
+.form-group {
+    text-align: center;
+    box-sizing: unset;
+}
+
+.form-control {
+    height: auto;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%
+  }
