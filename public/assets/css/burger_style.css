@@ -1,0 +1,7 @@
+html {
+    background-color: aqua;
+}
+
+.btn:hover {
+    cursor:wait
+}
